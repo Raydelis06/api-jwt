@@ -1,0 +1,26 @@
+$kind: http-request
+url: http://localhost:3000/v2/tareas
+method: POST
+headers:
+  x-api-key: 15ee435e52d0bb44259851602ef45bf07afeaa28acd2c954ce8a5981ed4593a3
+body:
+  type: json
+  content: "{\r
+
+    \    \"usuarioId\": 1,\r
+
+    \    \"titulo\": \"prueba\"\r
+
+    }"
+auth:
+  type: jwt
+  credentials:
+    algorithm: HS256
+    isSecretBase64Encoded: false
+    payload: "{}"
+    addTokenTo: header
+    headerPrefix: Bearer
+    queryParamKey: token
+    header: "{}"
+    secret: 2912433e7dca6dff6cf730472c86622fafbdfce47debac9fe0df6ad1b1d30c48828b55c6efb0f5120ca7ce750f3865343c7924ebfc900d7a3352710528c91360
+order: 1789517226268
